@@ -1,14 +1,20 @@
+import ChooseTracks from '@/components/ChooseTracks'
+import Header from '@/components/Header'
 import { Inter } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home: React.FC = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    <h1>Spotitrybe</h1>
-    </main>
+      <main
+        className={`${inter.className}`}
+      >
+        <Header />
+        <section className="flex justify-center gap-10 py-10">
+        <ChooseTracks />
+        </section>
+      </main>
   )
 }
 
