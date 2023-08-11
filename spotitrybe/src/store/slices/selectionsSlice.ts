@@ -6,14 +6,6 @@ import { selectPlaylistThunk } from './selectPlaylistThunk'
 import { Playlist } from '@/types/Playlist'
 import { Track } from '@/types/Track'
 
-// interface Track {
-//   id: string;
-//   name: string;
-//   preview_url: string | null;
-// }
-
-type TracksResponse =  { tracks: { items: [{ track: { id: string, name: string, preview_url: string } }] } } 
-
 // Define a type for the slice state
 interface SelectionsState {
   selectedCategory: string | null,
